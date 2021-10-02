@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=devi ce-width, initial-scale=1.0">
+    <title>Editor App</title>
+    <link rel="stylesheet" href="assets/css/design.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top-buttons-area">
+            <div class="dropdown">
+              <button class="dropbtn">Dropdown</button>
+              <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+              </div>
+            </div>
+            <button id="temp-save" class="btn btn-save">SAVE</button>
+        </div>
+        <div class="coder">
+            <div class="code-editor htmlCoder" id="code1">
+                <div class="code-type">HTML</div>
+                <div class="code html" id="html"></div>
+            </div>
+            <div  class="code-editor cssCoder" id="code2">
+                <div class="code-type">CSS</div>
+                <div class="code css" id="css"></div>
+            </div>
+            <div class="code-editor jsCoder" id="code3">
+                <div class="code-type">JS</div>
+                <div class="code js" id="javascript"></div>
+            </div>
+        </div>
+        <div class="output" id="outpot">
+            <iframe src="" class="virtual-iframe" frameborder="0"></iframe>
+        </div>
+        <div class="buttons">
+            <button class="btn btn-start" onclick="update();">RUN</button>
+            <button class="btn btn-start" id="minimize" onclick="minimize();">Minimize</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="assets/js/set-config.js"></script>
+    <script src="assets/js/storage.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
+
